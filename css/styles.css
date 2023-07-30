@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+[class ^= "box-"] {
+    display: grid;
+    place-items: center;
+    border: solid 5px orangered;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(lightblue, darkblue);
+    height: 100vh;
+}
+
+.master-container img {
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.master-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+
+}
+
+.card {
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.card .simpson-info {
+    background: darkblue;
+    width: 100%;
+    border-radius: 20px;
+    color: #fff;
+
+}
